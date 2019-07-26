@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+    <title>VR: Simple HTMLembed Library</title>
+    <script src="./js/aframe/aframe.min.js"></script>
+    <script src="./js/aframe/aframe-htmlembed.min.js"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 32px;
+        }
+        
+        h1 {
+            font-size: 52px;
+        }
+        
+        .background {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <a-scene fog="type: linear; color: blue; far: 20;">
+        <a-plane color="green" height="500" width="500" rotation="-90 0 0"></a-plane>
+        <a-sky color="blue"></a-sky>
+        <a-entity id="cameraRig">
+            <a-camera id="camera">
+            </a-camera>
+            <a-entity id="mouseCursor" cursor="rayOrigin: mouse" raycaster="objects: .screen"></a-entity>
+            <a-entity laser-controls raycaster="objects: .screen;"></a-entity>
+        </a-entity>
+        <a-entity class="screen" htmlembed="ppu:256" position="0 2.5 -5">
+            <div class="background">
+                <h1>A-Frame HTML Embed Component</h1>
+                <p>HTML Embed is a component created for A-Frame. The HTML Embed component allows for arbitrary html to be inserted into your aframe scene. It allows you to update the display within A-Frame simply by manipulating the DOM as you normally
+                    would.
+                </p>
+                <a href="https://github.com/supereggbert/aframe-htmlembed-component"><img src="./assets/github.png" width="80" height="80" />Github</a>
+            </div>
+        </a-entity>
+    </a-scene>
+
+</body>
+
+</html>
