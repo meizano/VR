@@ -4,31 +4,31 @@
     <meta charset="utf-8">
     <title>Anime UI</title>
     <meta name="description" content="Anime UI — A-Frame">
-    <script src="./js/aframe/aframe.min.js"></script>
+    <script src="../js/aframe/aframe.min.js"></script>
   </head>
   <body>
     <a-scene renderer="colorManagement: true;">
-      <a-assets timeout="90000">
-        <a-asset-item id="engine" src="./anime-UI/models/engine.glb"></a-asset-item>
+      <a-assets>
+        <a-asset-item id="engine" src="models/engine.glb"></a-asset-item>
         <a-mixin id="image" geometry="height: 2; width: 2"></a-mixin>
         <a-mixin id="toggleAnimation" animation="property: visible; from: false; to: true; dur: 1" visible="false"></a-mixin>
-        <audio id="blip1" src="./anime-UI/audio/321103__nsstudios__blip1.wav"></audio>
+        <audio id="blip1" src="audio/321103__nsstudios__blip1.wav"></audio>
         <audio id="blip2" src="audio/321104__nsstudios__blip2.wav"></audio>
-        <img id="glow1" src="./anime-UI/img/glow1.png">
-        <img id="ring1" src="./anime-UI/img/ring1.png">
-        <img id="ring2" src="./anime-UI/img/ring2.png">
-        <img id="ring3" src="./anime-UI/img/ring3.png">
-        <img id="ring4" src="./anime-UI/img/ring4.png">
-        <img id="ring5" src="./anime-UI/img/ring5.png">
-        <img id="schematic1" src="./anime-UI/img/schematic1.png">
-        <img id="schematic2" src="./anime-UI/img/schematic2.png">
-        <img id="schematic3" src="./anime-UI/img/schematic3.png">
-        <img id="schematic4" src="./anime-UI/img/schematic4.png">
-        <img id="schematic5" src="./anime-UI/img/schematic5.png">
-        <img id="text1" src="./anime-UI/img/text1.png">
-        <img id="text2" src="./anime-UI/img/text2.png">
-        <img id="text3" src="./anime-UI/img/text3.png">
-        <img id="text4" src="./anime-UI/img/text4.png">
+        <img id="glow1" src="img/glow1.png">
+        <img id="ring1" src="img/ring1.png">
+        <img id="ring2" src="img/ring2.png">
+        <img id="ring3" src="img/ring3.png">
+        <img id="ring4" src="img/ring4.png">
+        <img id="ring5" src="img/ring5.png">
+        <img id="schematic1" src="img/schematic1.png">
+        <img id="schematic2" src="img/schematic2.png">
+        <img id="schematic3" src="img/schematic3.png">
+        <img id="schematic4" src="img/schematic4.png">
+        <img id="schematic5" src="img/schematic5.png">
+        <img id="text1" src="img/text1.png">
+        <img id="text2" src="img/text2.png">
+        <img id="text3" src="img/text3.png">
+        <img id="text4" src="img/text4.png">
       </a-assets>
 
       <a-entity position="1.75 0 1.2" rotation="0 28 0">
