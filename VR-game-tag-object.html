@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+    <title>VR: Game - Tag Object</title>
+    <script src="./js/aframe/aframe.min.js"></script>
+
+<body>
+    <a-scene>
+        <a-assets>
+            <img id="skybox" src="360/27017126768_4152e6eb2a_k.jpg">
+        </a-assets>
+        <a-entity id="gamearea">
+            <a-sky src="#skybox"></a-sky>
+            <a-entity camera look-controls wasd-controls>
+                    <a-text id="score-element" Value="Skor" position="0 0 0" color="yellow"></a-text>
+                <a-entity position="0 0 -5" geometry="primitive: ring; radiusInner: 0.05; radiusOuter: 0.1;"
+                    material="color: cyan; shader: flat" cursor="maxDistance: 30; fuse: true"
+                    animation__click="property: scale; from: 0.2 0.2 0.2; to: 1 1 1;startEvents: click; dur: 150;easing:easeInQuad;"
+                    animation__fusing="property: scale; from: 1 1 1; to: 0.2 0.2 0.2;startEvents: fusing; dur: 150;easing:easeInQuad;">
+                </a-entity>
+                
+            </a-entity>
+        </a-entity>
+    </a-scene>
+
+    <a-entity id="hiddenmickey" color="red" position="0 0.5 -5" scale="0.3 0.3 0.3"
+        animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 2000"
+        animation__collect="property: position; to: 0 0 0; dur: 300; startEvents: collected"
+        animation__minimize="property: scale; to: 0 0 0; dur: 300; startEvents: collected">
+        <a-sphere radius="1" position="0 0 0" color="red"></a-sphere>
+        <a-sphere radius="0.8" position="1.1 1 0" color="red"></a-sphere>
+        <a-sphere radius="0.8" position="-1.1 1 0" color="red"></a-sphere>
+    </a-entity>
+
+    <script src="./js/taggame.js"></script>
+</body>
+<!-- Referensi: https://dev.to/azure/how-to-build-a-webvr-game-with-a-frame-4ifg -->
+</html>
