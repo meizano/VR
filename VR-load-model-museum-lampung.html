@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+    <title>VR: Artefak Museum Lampung (OBJ & MTL)</title>
+    <script src="./js/aframe/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+        <a-assets>
+            <a-asset-item id="patung-1-obj" src="./assets/museum/Patung 1/mesh.obj"></a-asset-item>
+            <a-asset-item id="patung-1-mtl" src="./assets/museum/Patung 1/mesh.mtl"></a-asset-item>
+            <a-asset-item id="patung-2-obj" src="./assets/museum/Patung 2/mesh.obj"></a-asset-item>
+            <a-asset-item id="patung-2-mtl" src="./assets/museum/Patung 2/mesh.mtl"></a-asset-item>
+            <a-asset-item id="prasasti-1-obj" src="./assets/museum/Prasasti 1/mesh.obj"></a-asset-item>
+            <a-asset-item id="prasasti-1-mtl" src="./assets/museum/Prasasti 1/mesh.mtl"></a-asset-item>
+            <a-asset-item id="prasasti-2-obj" src="./assets/museum/Prasasti 2/mesh.obj"></a-asset-item>
+            <a-asset-item id="prasasti-2-mtl" src="./assets/museum/Prasasti 2/mesh.mtl"></a-asset-item>
+            <a-asset-item id="batu-1-obj" src="./assets/museum/Batu 1/mesh.obj"></a-asset-item>
+            <a-asset-item id="batu-1-mtl" src="./assets/museum/Batu 1/mesh.mtl"></a-asset-item>
+            
+        </a-assets>
+        <a-box position="-4 0.5 -2" rotation="0 45 0" color="#FFC300" material="" geometry="">
+            <a-gltf-model obj-model="obj: #patung-1-obj; mtl: #patung-1-mtl" rotation="0 120 180" scale="5 5 5" position="0 1 0"></a-gltf-model>
+        </a-box>
+        <a-box position="-2 0.5 -2" rotation="0 45 0" color="#FFF300" material="" geometry="">
+            <a-gltf-model obj-model="obj: #patung-2-obj; mtl: #patung-2-mtl" rotation="0 120 180" scale="5 5 5" position="0 1 0"></a-gltf-model>
+        </a-box>
+
+        <a-box position="0 0.5 -2" rotation="0 45 0" color="#FFCF00" material="" geometry="">
+            <a-gltf-model obj-model="obj: #prasasti-1-obj; mtl: #prasasti-1-mtl" rotation="0 120 180" scale="5 5 5" position="0 1 0"></a-gltf-model>
+        </a-box>
+        
+        <a-box position="2 0.5 -2" rotation="0 45 0" color="#FFFF00" material="" geometry="">
+            <a-gltf-model obj-model="obj: #prasasti-2-obj; mtl: #prasasti-2-mtl" rotation="0 120 180" scale="5 5 5" position="0 1 0"></a-gltf-model>
+        </a-box>
+
+        <a-box position="4 0.5 -2" rotation="0 45 0" color="#FFCF00" material="" geometry="">
+            <a-gltf-model obj-model="obj: #batu-1-obj; mtl: #batu-1-mtl" rotation="0 120 180" scale="5 5 5" position="0 1 0"></a-gltf-model>
+        </a-box>
+    </a-scene>
+</body>
+
+</html>
