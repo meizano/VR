@@ -1,3 +1,4 @@
+//taggame.js
 const sceneEl = document.querySelector("a-scene")
 const hiddenMickeyEl = document.querySelector("#hiddenmickey")
 const scoreEl = document.querySelector('#score-element');
